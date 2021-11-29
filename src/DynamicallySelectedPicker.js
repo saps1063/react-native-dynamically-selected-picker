@@ -160,6 +160,7 @@ export default class DynamicallySelectedPicker extends React.Component {
               <PickerListItem
                 key={index}
                 label={item.label}
+                label1={item.label1}
                 itemColor={item.itemColor}
                 allItemsColor={allItemsColor}
                 fontSize={fontSize ? fontSize : itemHeight / 2}
