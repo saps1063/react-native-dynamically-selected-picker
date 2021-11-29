@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 
 export default function PickerListItem({
   label,
+  label1,
   style,
   itemColor,
   allItemsColor,
@@ -10,7 +11,7 @@ export default function PickerListItem({
   fontFamily = 'Arial',
 }) {
   return (
-    <View style={style}>
+    <View style={[style, {flexDirection:'row', justifyContent:'space-around'}]}>
       <Text
         style={{
           fontSize: fontSize,
@@ -18,6 +19,14 @@ export default function PickerListItem({
           fontFamily: fontFamily,
         }}>
         {label}
+      </Text>
+      <Text
+        style={{
+          fontSize: fontSize,
+          color: itemColor ? itemColor : allItemsColor,
+          fontFamily: fontFamily,
+        }}>
+        {label1}
       </Text>
     </View>
   );
