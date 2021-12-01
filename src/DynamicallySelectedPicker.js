@@ -152,6 +152,7 @@ export default class DynamicallySelectedPicker extends React.Component {
           onScroll={(event) => {
             this.onScroll(event);
           }}
+          nestedScrollEnabled={true}
           scrollEventThrottle
           initialScrollIndex={itemIndex}
           snapToInterval={itemHeight}>
