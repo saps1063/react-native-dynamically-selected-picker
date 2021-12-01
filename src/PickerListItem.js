@@ -17,6 +17,8 @@ export default function PickerListItem({
           fontSize: fontSize,
           color: itemColor ? itemColor : allItemsColor,
           fontFamily: fontFamily,
+          textAlign:'center',
+          flex:0.5
         }}>
         {label}
       </Text>
@@ -25,6 +27,8 @@ export default function PickerListItem({
           fontSize: fontSize,
           color: itemColor ? itemColor : allItemsColor,
           fontFamily: fontFamily,
+          textAlign:'center', 
+          flex:0.5
         }}>
         {label1}
       </Text>
